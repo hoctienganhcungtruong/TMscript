@@ -149,21 +149,6 @@ UserInputService.InputChanged:Connect(function(input)
         )
     end
 end)
--- Drag synchronization handler 
-
-
-UserInputService.InputChanged:Connect(function(input)
-    if dragging and input.UserInputType == Enum.UserInputType.MouseMovement then
-        local delta = input.Position - dragStart
-
-        mainUIFrame.Position = UDim2.new(
-            startPos.X.Scale,
-            startPos.X.Offset + delta.X,
-            startPos.Y.Scale,
-            startPos.Y.Offset + delta.Y
-        )
-    end
-end)
 -- Header Bar
 local headerBar = Instance.new("Frame")
 headerBar.Name = "Header"
