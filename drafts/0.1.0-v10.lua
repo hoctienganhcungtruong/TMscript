@@ -61,6 +61,7 @@ iconStroke.Transparency = 0.3
 ---------------------------------------------------------------------
 -- MAIN FRAME (COMPACT SIZE & BORDER DRAGGING)
 ---------------------------------------------------------------------
+local mainUIFrame = Instance.new("Frame")
 mainUIFrame.Name = "MainFrame"
 mainUIFrame.Size = UDim2.new(0, 310, 0, 310) -- Further reduced and balanced square profile
 mainUIFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
